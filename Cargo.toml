@@ -1,0 +1,21 @@
+[package]
+name = "tictoc"
+version = "0.1.0"
+authors = ["Alejandro Llanes <sombra.libre@gmail.com>"]
+edition = "2021"
+license = "MIT"
+description = "A simple multi-steps time tracking library."
+homepage = "https://github.com/sombralibre/tictoc"
+repository = "https://github.com/sombralibre/tictoc"
+documentation = "https://docs.rs/tictoc"
+readme = "README.md"
+keywords = ["date-and-time", "development-tools::profiling", "development-tools::debugging"]
+
+[dependencies]
+chrono = {version = "0.4", optional = true}
+
+[features]
+default = ["chrono"]
+unstable-locales = ["chrono", "chrono/unstable-locales"]
+localtime = ["chrono"]
+full = ["chrono", "chrono/unstable-locales"]
