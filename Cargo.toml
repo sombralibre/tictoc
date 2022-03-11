@@ -16,6 +16,5 @@ chrono = {version = "0.4", optional = true}
 
 [features]
 default = ["chrono"]
-unstable-locales = ["chrono", "chrono/unstable-locales"]
-localtime = ["chrono"]
 full = ["chrono", "chrono/unstable-locales"]
+localtime = ["chrono"]
