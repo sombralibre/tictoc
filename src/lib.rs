@@ -99,7 +99,7 @@ impl Timer {
     #[cfg(any(feature = "localtime"))]
     fn _diff(&self) -> Self {
         Self {
-            diff: Some(self.start.time() - self.end.unwrap().time()),
+            diff: Some(self.end.unwrap().time() - self.start.time()),
             local_diff: Some(self.local_end.unwrap().time() - self.local_start.time()),
             ..*self
         }
