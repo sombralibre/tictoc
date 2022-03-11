@@ -9,7 +9,7 @@ homepage = "https://github.com/sombralibre/tictoc"
 repository = "https://github.com/sombralibre/tictoc"
 documentation = "https://docs.rs/tictoc"
 readme = "README.md"
-keywords = ["date-and-time", "development-tools::profiling", "development-tools::debugging"]
+keywords = ["date-and-time"]
 
 [dependencies]
 chrono = {version = "0.4", optional = true}
