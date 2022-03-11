@@ -10,7 +10,7 @@ Both features enables `unstable-locales` feature from `chrono`, however `default
 meanwhile `localtime` feature uses current timezone.
 
 Anytime while using `localtime`, you can get Utc result by switching
-between `time` and `local_time` methods once `toc` mehod has been called.
+between `time` and `local_time` methods once `toc` method has been called.
 
 ```TOML
 ...
