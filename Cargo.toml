@@ -1,10 +1,10 @@
 [package]
 name = "tictoc"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Alejandro Llanes <sombra.libre@gmail.com>"]
 edition = "2021"
 license = "MIT"
-description = "A simple multi-steps time tracking library."
+description = "A time duration profiling library."
 homepage = "https://github.com/sombralibre/tictoc"
 repository = "https://github.com/sombralibre/tictoc"
 documentation = "https://docs.rs/tictoc"
@@ -15,6 +15,5 @@ keywords = ["date-and-time"]
 chrono = {version = "0.4", optional = true}
 
 [features]
-default = ["chrono"]
-full = ["chrono", "chrono/unstable-locales"]
+default = ["chrono", "chrono/unstable-locales"]
 localtime = ["chrono"]
